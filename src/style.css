@@ -1,1 +1,93 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  text-align: center;
+  background-color: green;
+  box-sizing: border-box;
+}
+
+.card {
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  margin: auto;
+  height: 200px;
+  width: 250px;
+  padding: 20px;
+  font-size: 80px;
+  padding-top: 180px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative;
+}
+
+.spades::before {
+  content: "\2660";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 80px;
+}
+.spades::after {
+  content: "\2660";
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 80px;
+}
+.heart::before {
+  content: "\2665";
+  color: red;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 80px;
+}
+.heart::after {
+  content: "\2665";
+  color: red;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 80px;
+}
+.diamond::before {
+  content: "\2666";
+  color: red;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 80px;
+}
+.diamond::after {
+  content: "\2666";
+  color: red;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 80px;
+}
+.club::before {
+  content: "\2663";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 80px;
+}
+.club::after {
+  content: "\2663";
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 80px;
+}
+
+.button-card {
+  position: absolute;
+  bottom: 100px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(216, 216, 216);
+  box-shadow: 1px 10px 10px rgb(18, 65, 7);
+}
